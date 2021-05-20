@@ -14,7 +14,7 @@ public class Demo {
         * Twoim zadaniem jest uzupełnienie 2 metod w klasie Monitor, klas strategii oraz powiązanie ich ze sobą.
         * */
 
-        Monitor monitor = new Monitor(30, 90);
+        Monitor monitor = new Monitor(30, 60);
         monitor.testMonitorFor(500);
     }
 }
