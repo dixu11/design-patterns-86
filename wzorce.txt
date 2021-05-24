@@ -1,0 +1,29 @@
+    wzorce kreacyjne:
+       Z Budowniczy (obiektowy),
+        Fabryka abstrakcyjna (obiektowy),
+       Z Metoda wytwórcza (klasowy),
+        Prototyp (obiektowy),
+            Singleton (obiektowy);
+
+    wzorce strukturalne:
+       Z Adapter (klasowy oraz obiektowy),
+       Z Dekorator (obiektowy),
+        Fasada (obiektowy),
+        Kompozyt (obiektowy),
+            Most (obiektowy),
+        Pełnomocnik (obiektowy),
+        Pyłek (obiektowy);
+
+    wzorce czynnościowe/operacyjne:
+       Z Łańcuch zobowiązań/odpowiedzialności (obiektowy),
+        Polecenie (obiektowy),
+            Interpreter (klasowy),
+        Iterator (obiektowy),
+            Mediator (obiektowy),
+       Z Pamiątka/Memento (ang. Memento) (obiektowy),
+       Z Metoda szablonowa (ang. template method) (klasowy),
+            Obserwator (obiektowy),
+            Stan (obiektowy),
+            Strategia (obiektowy),
+        Odwiedzający/Wizytator (ang. visitor) (obiektowy),
+            Zabór Zasobu Jest Inicjalizacją (obiektowy).
