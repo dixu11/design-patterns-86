@@ -6,9 +6,9 @@
             Singleton (obiektowy);
 
     wzorce strukturalne:
-       Z Adapter (klasowy oraz obiektowy),
+            Z Adapter (klasowy oraz obiektowy),
        Z Dekorator (obiektowy),
-        Fasada (obiektowy),
+            Fasada (obiektowy),
         Kompozyt (obiektowy),
             Most (obiektowy),
         Pełnomocnik (obiektowy),
