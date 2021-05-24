@@ -2,10 +2,10 @@ package structural.decoratorExample;
 
 abstract class WindowDecorator implements Window {
 
-    SimpleWindow simpleWindow;
+    Window window;
 
-    WindowDecorator(SimpleWindow simpleWindow) {
-        this.simpleWindow = simpleWindow;
+    WindowDecorator(Window window) {
+        this.window = window;
     }
 
 }

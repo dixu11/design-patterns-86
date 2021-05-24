@@ -2,13 +2,14 @@ package structural.decoratorExample;
 
 class VerticalSliderDecorator extends WindowDecorator{
 
-    VerticalSliderDecorator(SimpleWindow simpleWindow) {
-        super(simpleWindow);
+
+    VerticalSliderDecorator(Window window) {
+        super(window);
     }
 
     @Override
     public void display() {
-        simpleWindow.display();
+        window.display();
         System.out.println("Okno zawiera pionowy slider");
     }
 }
