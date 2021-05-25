@@ -2,6 +2,7 @@ package structural.composite;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Optional;
 
 public class Folder implements Component{
 
@@ -20,6 +21,18 @@ public class Folder implements Component{
 
     @Override
     public void open() {
+        System.out.println("Otwieram folder " + name);
+        for (Component component : components) {
+            component.open();
+        }
+    }
+
+    @Override
+    public Optional<Component> findComponentByName(String nameFragment) {
+
+
+
+
 
     }
 
@@ -33,5 +46,14 @@ public class Folder implements Component{
 
     public Collection<Component> getChildren() {
         return components;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Folder{" +
+                "name='" + name + '\'' +
+                ", components=" + components +
+                '}';
     }
 }
