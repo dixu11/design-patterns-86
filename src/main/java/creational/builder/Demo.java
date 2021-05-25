@@ -10,11 +10,12 @@ public class Demo {
                 "Wojska Polskiego 2");*/
 
         //3. tworzę obiekt klasy wewnętrznej
-        Person.PersonBuilder builder = new Person.PersonBuilder("Anna Markowska",
-                "a.markowska22", "Wojska Polskiego 2");
-        builder.withPhone(945456756);
-        builder.bornIn(LocalDate.now().minusYears(20));
-        Person person = builder.build();
+        Person person = new Person.PersonBuilder("Anna Markowska",
+                "a.markowska22", "Wojska Polskiego 2")
+                .withPhone(945456756)
+                .bornIn(LocalDate.now().minusYears(20))
+                .build();
         System.out.println(person);
+        //10. używam fluent interface (jak przy streamach)
     }
 }

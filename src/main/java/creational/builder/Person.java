@@ -58,12 +58,14 @@ public class Person {
         }
 
         //6. ustawianie opcjonalnych pól obiektu za pomocą specyficznych setterów
-        public void bornIn(LocalDate birthDate){
+        public PersonBuilder bornIn(LocalDate birthDate){
             person.birthDate = birthDate;
+            return this;
         }
 
-        public void withPhone(int phone){
+        public PersonBuilder withPhone(int phone){
             person.phone = phone;
+            return this;
         }
 
         //7. oddajemy budowany obiekt
@@ -72,6 +74,7 @@ public class Person {
         }
 
         //8. Poprawić nazwy metod
+        //9. metody pośrednie zwracają builder
 
     }
 
