@@ -44,6 +44,11 @@ public class Person {
                 '}';
     }
 
+    //11. statyczna metoda podrzucająca Builder
+    public static PersonBuilder builder(String fullName, String mail, String address){
+        return new PersonBuilder(fullName, mail, address);
+    }
+
     //2. wewnetrzna klasa statyczna
   static  class PersonBuilder{
 
