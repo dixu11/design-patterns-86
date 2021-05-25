@@ -9,7 +9,7 @@
             Z Adapter (klasowy oraz obiektowy),
             Z Dekorator (obiektowy),
             Fasada (obiektowy),
-        Kompozyt (obiektowy),
+            Kompozyt (obiektowy),
             Most (obiektowy),
         Pełnomocnik (obiektowy),
             Pyłek (obiektowy);
