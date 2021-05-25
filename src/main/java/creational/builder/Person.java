@@ -43,8 +43,8 @@ public class Person {
                 '}';
     }
 
-    //2. wewnetrzna klasa
-    class PersonBuilder{
+    //2. wewnetrzna klasa statyczna
+  static  class PersonBuilder{
 
     }
 
