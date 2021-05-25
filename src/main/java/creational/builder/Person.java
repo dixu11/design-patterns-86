@@ -69,6 +69,10 @@ public class Person {
             person.phone = phone;
         }
 
+        //7. oddajemy budowany obiekt
+        public Person getPerson() {
+            return person;
+        }
 
 
 
