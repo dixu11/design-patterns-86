@@ -8,7 +8,6 @@ public class Demo {
                 "Wojska Polskiego 2");*/
 
         //3. tworzę obiekt klasy wewnętrznej
-
         Person.PersonBuilder builder = new Person.PersonBuilder();
 
     }

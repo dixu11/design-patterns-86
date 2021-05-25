@@ -46,6 +46,10 @@ public class Person {
     //2. wewnetrzna klasa statyczna
   static  class PersonBuilder{
 
+        //4. tworzymy obiekt budowany w polu klasy buildera
+        private Person person = new Person();
+
+
     }
 
 }
