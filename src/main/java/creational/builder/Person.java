@@ -11,32 +11,9 @@ public class Person {
     private String mail;
     private String address;
 
-    public Person(String fullName, String mail, String address) {
-        this.fullName = fullName;
-        this.mail = mail;
-        this.address = address;
-    }
+    //1. zostawić tylko pusty prywatny konstruktor
+    private Person() {
 
-    public Person(String fullName, LocalDate birthDate, int phone, String mail, String address) {
-        this.fullName = fullName;
-        this.birthDate = birthDate;
-        this.phone = phone;
-        this.mail = mail;
-        this.address = address;
-    }
-
-    public Person(String fullName, LocalDate birthDate, String mail, String address) {
-        this.fullName = fullName;
-        this.birthDate = birthDate;
-        this.mail = mail;
-        this.address = address;
-    }
-
-    public Person(String fullName, int phone, String mail, String address) {
-        this.fullName = fullName;
-        this.phone = phone;
-        this.mail = mail;
-        this.address = address;
     }
 
 
@@ -65,4 +42,10 @@ public class Person {
                 ", address='" + address + '\'' +
                 '}';
     }
+
+    //2. wewnetrzna klasa
+    class PersonBuilder{
+
+    }
+
 }

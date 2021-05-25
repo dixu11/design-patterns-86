@@ -1,8 +1,8 @@
     wzorce kreacyjne:
        Z Budowniczy (obiektowy),
-        Fabryka abstrakcyjna (obiektowy),
-       Z Metoda wytwórcza (klasowy),
-        Prototyp (obiektowy),
+            Fabryka abstrakcyjna (obiektowy),
+            Z Metoda wytwórcza (klasowy),
+             Prototyp (obiektowy),
             Singleton (obiektowy);
 
     wzorce strukturalne:
