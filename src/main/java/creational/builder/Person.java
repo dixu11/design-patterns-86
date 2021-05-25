@@ -1,5 +1,7 @@
 package creational.builder;
 
+import jdk.vm.ci.meta.Local;
+
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -56,6 +58,15 @@ public class Person {
             person.fullName = fullName;
             person.mail = mail;
             person.address = address;
+        }
+
+        //6. ustawianie opcjonalnych pól obiektu za pomocą specyficznych setterów
+        public void setBirthDate(LocalDate birthDate){
+            person.birthDate = birthDate;
+        }
+
+        public void setPhone(int phone){
+            person.phone = phone;
         }
 
 
