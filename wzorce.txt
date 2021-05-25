@@ -11,14 +11,14 @@
             Fasada (obiektowy),
             Kompozyt (obiektowy),
             Most (obiektowy),
-        Pełnomocnik (obiektowy),
+            Pełnomocnik (obiektowy),
             Pyłek (obiektowy);
 
     wzorce czynnościowe/operacyjne:
        Z Łańcuch zobowiązań/odpowiedzialności (obiektowy),
         Polecenie (obiektowy),
             Interpreter (klasowy),
-        Iterator (obiektowy),
+            Iterator (obiektowy),
             Mediator (obiektowy),
        Z Pamiątka/Memento (ang. Memento) (obiektowy),
        Z Metoda szablonowa (ang. template method) (klasowy),
