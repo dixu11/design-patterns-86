@@ -26,7 +26,5 @@ public class Demo {
                 .build();
 
         System.out.println(person);
-
-
     }
 }

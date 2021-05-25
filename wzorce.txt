@@ -1,5 +1,5 @@
     wzorce kreacyjne:
-       Z Budowniczy (obiektowy),
+            Z Budowniczy (obiektowy),
             Fabryka abstrakcyjna (obiektowy),
             Z Metoda wytwórcza (klasowy),
              Prototyp (obiektowy),
