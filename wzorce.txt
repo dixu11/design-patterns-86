@@ -7,12 +7,12 @@
 
     wzorce strukturalne:
             Z Adapter (klasowy oraz obiektowy),
-       Z Dekorator (obiektowy),
+            Z Dekorator (obiektowy),
             Fasada (obiektowy),
         Kompozyt (obiektowy),
             Most (obiektowy),
         Pełnomocnik (obiektowy),
-        Pyłek (obiektowy);
+            Pyłek (obiektowy);
 
     wzorce czynnościowe/operacyjne:
        Z Łańcuch zobowiązań/odpowiedzialności (obiektowy),
