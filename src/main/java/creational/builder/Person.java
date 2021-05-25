@@ -5,11 +5,13 @@ import java.util.Objects;
 
 public class Person {
 
+    //obowiazkowe
     private String fullName;
-    private LocalDate birthDate;
-    private int phone;
     private String mail;
     private String address;
+    //opcjonalne
+    private LocalDate birthDate;
+    private int phone;
 
     //1. zostawić tylko pusty prywatny konstruktor
     private Person() {
@@ -48,6 +50,15 @@ public class Person {
 
         //4. tworzymy obiekt budowany w polu klasy buildera
         private Person person = new Person();
+
+        //5. przygotowujemy konstruktor buildera zbierający niezbędne informacje
+        public PersonBuilder(String fullName, String mail, String address) {
+            person.fullName = fullName;
+            person.mail = mail;
+            person.address = address;
+        }
+
+
 
 
     }
