@@ -12,12 +12,9 @@ public class Demo {
         //3. tworzę obiekt klasy wewnętrznej
         Person.PersonBuilder builder = new Person.PersonBuilder("Anna Markowska",
                 "a.markowska22", "Wojska Polskiego 2");
-        builder.setPhone(945456756);
-        builder.setBirthDate(LocalDate.now().minusYears(20));
-        Person person = builder.getPerson();
-
+        builder.withPhone(945456756);
+        builder.bornIn(LocalDate.now().minusYears(20));
+        Person person = builder.build();
         System.out.println(person);
-
-
     }
 }
