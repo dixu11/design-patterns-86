@@ -5,7 +5,6 @@ public class LoggerFactory {
     private Logger firstLogger;
 
     LoggerFactory() {
-
     }
 
     public Logger createLogger() {

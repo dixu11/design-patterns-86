@@ -12,7 +12,9 @@ public class Demo {
      * */
 
     public static void main(String[] args) {
-        showGuiInputAndOutputExample();
+        //showGuiInputAndOutputExample();
+        TextConverter textConverter = new TextConverter();
+        textConverter.runConverter();
     }
 
     private static void showGuiInputAndOutputExample() {

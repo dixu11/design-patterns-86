@@ -14,6 +14,7 @@ public abstract class Logger {
         return nextLogger;
     }
 
+    //template method pattern
     void log(String message, LogLvl msgLvl){
         if (lvl == msgLvl) {
           log(message);
