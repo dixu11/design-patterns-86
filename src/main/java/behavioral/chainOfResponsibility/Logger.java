@@ -2,11 +2,33 @@ package behavioral.chainOfResponsibility;
 
 public abstract class Logger {
 
-    Logger nextLogger;
+  private   Logger nextLogger;
+    private LogLvl lvl;
 
-    void setNextLogger(Logger nextLogger) {
-        this.nextLogger = nextLogger;
+   public Logger(LogLvl lvl) {
+        this.lvl = lvl;
     }
 
-    abstract void log(String message, LogLvl lvl);
+    Logger setNextLogger(Logger nextLogger) {
+        this.nextLogger = nextLogger;
+        return nextLogger;
+    }
+
+    void log(String message, LogLvl msgLvl){
+        if (lvl == msgLvl) {
+          log(message);
+        } else if(nextLogger!= null){
+            nextLogger.log(message, msgLvl);
+        }
+    }
+
+    abstract void log(String message);
+
+    LogLvl getLvl() {
+        return lvl;
+    }
+
+   public Logger getNextLogger() {
+        return nextLogger;
+    }
 }

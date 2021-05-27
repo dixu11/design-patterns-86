@@ -4,14 +4,8 @@ public class LoggerDemo {
 
     public static void main(String[] args) throws InterruptedException {
 
-        ErrorLogger logger = new ErrorLogger();
-        WarningLogger warningLogger = new WarningLogger();
-        InfoLogger infoLogger = new InfoLogger();
-        DebugLogger debugLogger = new DebugLogger();
-
-        logger.setNextLogger(warningLogger);
-        warningLogger.setNextLogger(infoLogger);
-        infoLogger.setNextLogger(debugLogger);
+        LoggerFactory factory = new LoggerFactory();
+        Logger logger = factory.createLogger();
 
         System.out.println("Test dla ustawienia: " + LogLvl.DEBUG); // powinny wyświetlić się wszystkie logi
 
@@ -20,15 +14,15 @@ public class LoggerDemo {
         logger.log("Chyba ktoś podłożył ogień...", LogLvl.WARNING);
         logger.log("Wszystko wybuchło!", LogLvl.ERROR);
 
-       /* Thread.sleep(1000); // czekam sekundę
+        Thread.sleep(1000); // czekam sekundę
         System.out.println("----");
         System.out.println("Test dla ustawienia: " + LogLvl.WARNING); // logi z niższym priorytetem niż WARNING nie powinny się wyświetlić
-        logger.setMinLogLvl(LogLvl.WARNING);
+        logger = factory.createLimitedLogger(LogLvl.ERROR);
 
         logger.log("Debug który nie powinien się wyświetlić", LogLvl.DEBUG);
         logger.log("Info, które nie powinno się wyświetlić", LogLvl.INFO);
         logger.log("Wykryto włamanie", LogLvl.WARNING);
-        logger.log("Odcięto przewód do systemu antywłamaniowego", LogLvl.ERROR);*/
+        logger.log("Odcięto przewód do systemu antywłamaniowego", LogLvl.ERROR);
 
     }
 

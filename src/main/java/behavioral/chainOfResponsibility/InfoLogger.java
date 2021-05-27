@@ -1,12 +1,12 @@
 package behavioral.chainOfResponsibility;
 
 public class InfoLogger extends Logger {
+    public InfoLogger() {
+        super(LogLvl.INFO);
+    }
+
     @Override
-    public void log(String message, LogLvl lvl) {
-        if (LogLvl.INFO == lvl) {
-            System.out.println("INFO: " + message);
-        } else {
-            nextLogger.log(message, lvl);
-        }
+    public void log(String message) {
+        System.out.println("INFO: " + message);
     }
 }
