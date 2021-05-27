@@ -16,7 +16,7 @@
 
     wzorce czynnościowe/operacyjne:
        Z Łańcuch zobowiązań/odpowiedzialności (obiektowy),
-        Polecenie (obiektowy),
+       Polecenie (obiektowy),
             Interpreter (klasowy),
             Iterator (obiektowy),
             Mediator (obiektowy),

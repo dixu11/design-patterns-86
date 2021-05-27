@@ -3,7 +3,16 @@ package behavioral.chainOfResponsibility;
 public class LoggerDemo {
 
     public static void main(String[] args) throws InterruptedException {
-        Logger logger = new Logger();
+
+        ErrorLogger logger = new ErrorLogger();
+        WarningLogger warningLogger = new WarningLogger();
+        InfoLogger infoLogger = new InfoLogger();
+        DebugLogger debugLogger = new DebugLogger();
+
+        logger.setNextLogger(warningLogger);
+        warningLogger.setNextLogger(infoLogger);
+        infoLogger.setNextLogger(debugLogger);
+
         System.out.println("Test dla ustawienia: " + LogLvl.DEBUG); // powinny wyświetlić się wszystkie logi
 
         logger.log("Ilość czujników dymu: 5", LogLvl.DEBUG);
@@ -11,7 +20,7 @@ public class LoggerDemo {
         logger.log("Chyba ktoś podłożył ogień...", LogLvl.WARNING);
         logger.log("Wszystko wybuchło!", LogLvl.ERROR);
 
-        Thread.sleep(1000); // czekam sekundę
+       /* Thread.sleep(1000); // czekam sekundę
         System.out.println("----");
         System.out.println("Test dla ustawienia: " + LogLvl.WARNING); // logi z niższym priorytetem niż WARNING nie powinny się wyświetlić
         logger.setMinLogLvl(LogLvl.WARNING);
@@ -19,7 +28,7 @@ public class LoggerDemo {
         logger.log("Debug który nie powinien się wyświetlić", LogLvl.DEBUG);
         logger.log("Info, które nie powinno się wyświetlić", LogLvl.INFO);
         logger.log("Wykryto włamanie", LogLvl.WARNING);
-        logger.log("Odcięto przewód do systemu antywłamaniowego", LogLvl.ERROR);
+        logger.log("Odcięto przewód do systemu antywłamaniowego", LogLvl.ERROR);*/
 
     }
 
