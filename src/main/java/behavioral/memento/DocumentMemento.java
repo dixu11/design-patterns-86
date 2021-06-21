@@ -1,9 +1,9 @@
 package behavioral.memento;
 
 public class DocumentMemento {
-    private String content;
-    private double fontSize;
-    private String color;
+    private final String content;
+    private final double fontSize;
+    private final String color;
 
     public DocumentMemento(String content, double fontSize, String color) {
         this.content = content;
