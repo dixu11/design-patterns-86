@@ -19,7 +19,6 @@ public class MementoDemo {
 
         System.out.println(document);
         document.setFontSize(20);
-        caretaker.saveDocument();
         System.out.println(document);
 
 //        System.out.println(memento);
@@ -29,6 +28,10 @@ public class MementoDemo {
 
 
         System.out.println("Cofnij:");
+        caretaker.undoDocument();
+        System.out.println(document);
+        caretaker.undoDocument();
+        System.out.println(document);
         caretaker.undoDocument();
         System.out.println(document);
         caretaker.undoDocument();

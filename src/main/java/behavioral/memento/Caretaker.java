@@ -20,7 +20,10 @@ public class Caretaker {
     }
 
     public void undoDocument() {
-        document.recreateFromMemento(stack.getLast());
+        if (stack.isEmpty()) {
+            return;
+        }
+        document.recreateFromMemento(stack.removeLast());
     }
 
 
